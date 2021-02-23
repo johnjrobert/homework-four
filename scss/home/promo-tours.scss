@@ -1,0 +1,130 @@
+.promo-tours {
+  max-width: 1280px;
+  min-height: 304px;
+  //   background-color: green;
+  margin: -40px auto 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-left: 200px;
+  padding-right: 200px;
+
+  .isreal {
+    height: 304px;
+    width: 236px;
+    // background-color: red;
+    background-image: linear-gradient(
+        to right,
+        $travel-promo-black,
+        $travel-promo-black
+      ),
+      url(../assests/images/tour-01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .isreal-header {
+      padding-top: 60px;
+      text-align: center;
+      color: $travel-white;
+      font-family: Gill;
+    }
+
+    .isreal-cost {
+      text-align: center;
+      padding-bottom: 60px;
+      color: $travel-white;
+      font-family: Gill;
+    }
+  }
+
+  .usa {
+    height: 304px;
+    width: 236px;
+    background-color: red;
+    background-image: linear-gradient(
+        to right,
+        $travel-promo-black,
+        $travel-promo-black
+      ),
+      url(../assests/images/tour-02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .usa-header {
+      padding-top: 60px;
+      text-align: center;
+      color: $travel-white;
+      font-family: Gill;
+    }
+
+    .usa-cost {
+      text-align: center;
+      padding-bottom: 60px;
+      color: $travel-white;
+      font-family: Gill;
+    }
+  }
+
+  .aus {
+    height: 304px;
+    width: 236px;
+    background-color: red;
+    background-image: linear-gradient(
+        to right,
+        $travel-promo-black,
+        $travel-promo-black
+      ),
+      url(../assests/images/tour-03.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .aus-header {
+      padding-top: 60px;
+      text-align: center;
+      color: $travel-white;
+      font-family: Gill;
+    }
+
+    .aus-cost {
+      text-align: center;
+      padding-bottom: 60px;
+      color: $travel-white;
+      font-family: Gill;
+    }
+  }
+
+  .learn-more {
+    width: 133px;
+    height: 40px;
+    background-color: $travel-blue;
+    color: $travel-white;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Gill;
+    border-radius: 25px;
+    //Find a way to center vertically that will work.
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+  .promo-tours {
+    width: 236px;
+    flex-direction: column;
+    // padding-bottom: 10px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .isreal {
+    margin-bottom: 20px;
+  }
+
+  .usa {
+    margin-bottom: 20px;
+  }
+}

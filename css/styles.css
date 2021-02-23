@@ -1,0 +1,504 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: Gill;
+  src: url("fonts/GillSansMTPro-Book.otf");
+}
+.header {
+  max-width: 980px;
+  height: 90px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ffffff;
+  font-family: Gill;
+}
+.header .logo {
+  background-image: url(../assests/images/logo-white.svg);
+  height: 42px;
+  width: 92px;
+}
+.header nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: Gill;
+  border-right: 1px solid #79addc;
+  margin-left: 40px;
+}
+
+.hero {
+  max-width: 1280px;
+  height: 500px;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assests/images/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero .travelfly-header {
+  padding-top: 100px;
+  text-align: center;
+  color: #ffffff;
+  font-family: "gill";
+}
+.hero .header-para {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #ffffff;
+  font-family: Gill;
+}
+.hero .read-more {
+  margin: 0 auto;
+  width: 121px;
+  height: 40px;
+  background-color: #79addc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-family: Gill;
+}
+
+.promo-tours {
+  max-width: 1280px;
+  min-height: 304px;
+  margin: -40px auto 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.promo-tours .isreal {
+  height: 304px;
+  width: 236px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assests/images/tour-01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.promo-tours .isreal .isreal-header {
+  padding-top: 60px;
+  text-align: center;
+  color: #ffffff;
+  font-family: Gill;
+}
+.promo-tours .isreal .isreal-cost {
+  text-align: center;
+  padding-bottom: 60px;
+  color: #ffffff;
+  font-family: Gill;
+}
+.promo-tours .usa {
+  height: 304px;
+  width: 236px;
+  background-color: red;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assests/images/tour-02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.promo-tours .usa .usa-header {
+  padding-top: 60px;
+  text-align: center;
+  color: #ffffff;
+  font-family: Gill;
+}
+.promo-tours .usa .usa-cost {
+  text-align: center;
+  padding-bottom: 60px;
+  color: #ffffff;
+  font-family: Gill;
+}
+.promo-tours .aus {
+  height: 304px;
+  width: 236px;
+  background-color: red;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assests/images/tour-03.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.promo-tours .aus .aus-header {
+  padding-top: 60px;
+  text-align: center;
+  color: #ffffff;
+  font-family: Gill;
+}
+.promo-tours .aus .aus-cost {
+  text-align: center;
+  padding-bottom: 60px;
+  color: #ffffff;
+  font-family: Gill;
+}
+.promo-tours .learn-more {
+  width: 133px;
+  height: 40px;
+  background-color: #79addc;
+  color: #ffffff;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Gill;
+  border-radius: 25px;
+}
+
+@media only screen and (max-width: 1160px) {
+  .promo-tours {
+    width: 236px;
+    flex-direction: column;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .isreal {
+    margin-bottom: 20px;
+  }
+
+  .usa {
+    margin-bottom: 20px;
+  }
+}
+.booking-form {
+  min-height: 932px;
+  max-width: 825px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.booking-form .booking-header {
+  margin-top: 65px;
+  font-size: 60px;
+  font-family: Gill;
+}
+.booking-form .line-one {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.booking-form .line-one .line-one-name {
+  height: 58px;
+  width: 344px;
+  border: 1px #79addc solid;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.booking-form .line-one .line-one-name .name-text {
+  margin-left: 10px;
+  font-family: Gill;
+}
+.booking-form .line-one .line-one-email {
+  width: 453px;
+  height: 58px;
+  border: 1px #79addc solid;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.booking-form .line-one .line-one-email .email-text {
+  margin-left: 10px;
+  font-family: Gill;
+}
+.booking-form .line-two {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.booking-form .line-two .line-two-country {
+  height: 58px;
+  width: 344px;
+  border: 1px #79addc solid;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.booking-form .line-two .line-two-country .country-text {
+  margin-left: 10px;
+  font-family: Gill;
+}
+.booking-form .line-two .line-two-hotel {
+  width: 453px;
+  height: 58px;
+  border: 1px #79addc solid;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.booking-form .line-two .line-two-hotel .hotel-text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-left: 10px;
+  font-family: Gill;
+}
+.booking-form .line-three {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.booking-form .line-three .line-three-check-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Gill;
+}
+.booking-form .line-three .line-three-date {
+  width: 700px;
+  height: 58px;
+  border: 1px #79addc solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-family: Gill;
+}
+.booking-form .line-three .line-three-date .calendar {
+  width: 19px;
+  height: 19px;
+  background-image: url(../assests/images/calendar.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.booking-form .line-four {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.booking-form .line-four .line-four-check-out {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Gill;
+}
+.booking-form .line-four .line-four-date {
+  width: 700px;
+  height: 58px;
+  border: 1px #79addc solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-family: Gill;
+}
+.booking-form .line-four .line-four-date .calendar {
+  width: 19px;
+  height: 19px;
+  background-image: url(../assests/images/calendar.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.booking-form .line-five {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.booking-form .line-five .adult-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Gill;
+}
+.booking-form .line-five .adult {
+  width: 103px;
+  height: 58px;
+  border: 1px #79addc solid;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 10px;
+}
+.booking-form .line-five .adult .adult-arrow {
+  height: 10px;
+  width: 20px;
+  background-image: url(../assests/images/down-arrow.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.booking-form .line-five .children-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Gill;
+}
+.booking-form .line-five .children {
+  width: 103px;
+  height: 58px;
+  border: 1px #79addc solid;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 10px;
+}
+.booking-form .line-five .children .children-arrow {
+  height: 10px;
+  width: 20px;
+  background-image: url(../assests/images/down-arrow.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.booking-form .line-five .rooms-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Gill;
+}
+.booking-form .line-five .rooms {
+  width: 103px;
+  height: 58px;
+  border: 1px #79addc solid;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 10px;
+  font-family: Gill;
+}
+.booking-form .line-five .rooms .rooms-arrow {
+  height: 10px;
+  width: 20px;
+  background-image: url(../assests/images/down-arrow.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.booking-form .message {
+  margin-top: 20px;
+  width: 825px;
+  height: 192px;
+  border: 1px #79addc solid;
+}
+.booking-form .message .message-text {
+  padding-top: 10px;
+  padding-left: 10px;
+  font-family: Gill;
+}
+.booking-form .submit-button {
+  margin-top: 65px;
+  height: 60px;
+  max-width: 813px;
+  background-color: #79addc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-family: Gill;
+  border-radius: 25px;
+  margin: 25px auto;
+}
+
+@media only screen and (max-width: 1160px) {
+  .booking-form {
+    width: 344px;
+    justify-content: center;
+    padding-right: 0px;
+    padding-left: 0px;
+    text-align: center;
+  }
+  .booking-form .line-one {
+    padding-right: 0px;
+    padding-left: 0px;
+    flex-wrap: wrap;
+  }
+  .booking-form .line-one .line-one-name {
+    margin-bottom: 20px;
+  }
+  .booking-form .line-two {
+    padding-right: 0px;
+    padding-left: 0px;
+    flex-wrap: wrap;
+  }
+  .booking-form .line-two .line-two-country {
+    margin-bottom: 20px;
+  }
+  .booking-form .line-three {
+    padding-right: 0px;
+    padding-left: 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .booking-form .line-four {
+    padding-right: 0px;
+    padding-left: 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .booking-form .line-five {
+    padding-right: 0px;
+    padding-left: 0px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .booking-form .line-five .adult {
+    margin: 5px 120.5px 20px 120.5px;
+  }
+  .booking-form .line-five .children {
+    margin: 5px 120.5px 20px 120.5px;
+  }
+  .booking-form .line-five .rooms {
+    margin: 5px 120.5px 20px 120.5px;
+  }
+  .booking-form .message {
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 344px;
+  }
+  .booking-form .submit-button {
+    margin: 50px 0px 50px 0px;
+  }
+}
+footer {
+  max-width: 1280px;
+  min-height: 100px;
+  margin: 0 auto;
+  background-color: #79addc;
+}
+footer .footer-content {
+  width: 1280px;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+footer .footer-content .logo {
+  width: 92px;
+  height: 42px;
+  background-image: url(../assests/images/logo-white.svg);
+}
+footer .footer-content .copyright {
+  font-size: 12px;
+  color: #ffffff;
+  font-family: Gill;
+}
+footer .footer-content .social {
+  width: 120px;
+  height: 100px;
+}

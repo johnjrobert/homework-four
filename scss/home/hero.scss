@@ -1,0 +1,38 @@
+.hero {
+  max-width: 1280px;
+  height: 500px;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, $travel-black, $travel-black),
+    url(../assests/images/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .travelfly-header {
+    padding-top: 100px;
+    text-align: center;
+    color: $travel-white;
+    font-family: "gill";
+  }
+
+  .header-para {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: $travel-white;
+    font-family: Gill;
+  }
+
+  .read-more {
+    // padding-top: 50px;
+    margin: 0 auto;
+    width: 121px;
+    height: 40px;
+    background-color: $travel-blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $travel-white;
+    font-family: Gill;
+  }
+}

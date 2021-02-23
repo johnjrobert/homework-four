@@ -1,0 +1,32 @@
+footer {
+  max-width: 1280px;
+  min-height: 100px;
+  margin: 0 auto;
+  background-color: $travel-blue;
+
+  .footer-content {
+    width: 1280px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+
+    .logo {
+      width: 92px;
+      height: 42px;
+      background-image: url(../assests/images/logo-white.svg);
+    }
+
+    .copyright {
+      font-size: 12px;
+      color: $travel-white;
+      font-family: Gill;
+    }
+
+    .social {
+      width: 120px;
+      height: 100px;
+    }
+  }
+}

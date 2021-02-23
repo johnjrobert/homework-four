@@ -1,0 +1,356 @@
+.booking-form {
+  min-height: 932px;
+  max-width: 825px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  // background-color: cadetblue;
+
+  .booking-header {
+    margin-top: 65px;
+    font-size: 60px;
+    font-family: Gill;
+  }
+
+  .line-one {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+
+    .line-one-name {
+      height: 58px;
+      width: 344px;
+      border: 1px $travel-blue solid;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+
+      .name-text {
+        margin-left: 10px;
+        font-family: Gill;
+      }
+    }
+
+    .line-one-email {
+      width: 453px;
+      height: 58px;
+      border: 1px $travel-blue solid;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+
+      .email-text {
+        margin-left: 10px;
+        font-family: Gill;
+      }
+    }
+  }
+
+  .line-two {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    .line-two-country {
+      height: 58px;
+      width: 344px;
+      border: 1px $travel-blue solid;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+
+      .country-text {
+        margin-left: 10px;
+        font-family: Gill;
+      }
+    }
+
+    .line-two-hotel {
+      width: 453px;
+      height: 58px;
+      border: 1px $travel-blue solid;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+
+      .hotel-text {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-left: 10px;
+        font-family: Gill;
+      }
+    }
+  }
+
+  .line-three {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    .line-three-check-in {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Gill;
+    }
+
+    .line-three-date {
+      width: 700px;
+      height: 58px;
+      border: 1px $travel-blue solid;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: 10px;
+      padding-left: 10px;
+      font-family: Gill;
+
+      .calendar {
+        width: 19px;
+        height: 19px;
+        background-image: url(../assests/images/calendar.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  }
+
+  .line-four {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    .line-four-check-out {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Gill;
+    }
+
+    .line-four-date {
+      width: 700px;
+      height: 58px;
+      border: 1px $travel-blue solid;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: 10px;
+      padding-left: 10px;
+      font-family: Gill;
+
+      .calendar {
+        width: 19px;
+        height: 19px;
+        background-image: url(../assests/images/calendar.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  }
+
+  .line-five {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    .adult-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Gill;
+    }
+
+    .adult {
+      width: 103px;
+      height: 58px;
+      border: 1px $travel-blue solid;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      padding-right: 10px;
+
+      .adult-arrow {
+        height: 10px;
+        width: 20px;
+        background-image: url(../assests/images/down-arrow.svg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        // display: flex;
+        // justify-content: end;
+        // align-items: center;
+      }
+    }
+
+    .children-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Gill;
+    }
+
+    .children {
+      width: 103px;
+      height: 58px;
+      border: 1px $travel-blue solid;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      padding-right: 10px;
+
+      .children-arrow {
+        height: 10px;
+        width: 20px;
+        background-image: url(../assests/images/down-arrow.svg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        // display: flex;
+        // justify-content: end;
+        // align-items: center;
+      }
+    }
+
+    .rooms-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Gill;
+    }
+
+    .rooms {
+      width: 103px;
+      height: 58px;
+      border: 1px $travel-blue solid;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      padding-right: 10px;
+      font-family: Gill;
+
+      .rooms-arrow {
+        height: 10px;
+        width: 20px;
+        background-image: url(../assests/images/down-arrow.svg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  .message {
+    margin-top: 20px;
+    width: 825px;
+    height: 192px;
+    border: 1px $travel-blue solid;
+
+    .message-text {
+      padding-top: 10px;
+      padding-left: 10px;
+      font-family: Gill;
+    }
+  }
+
+  .submit-button {
+    margin-top: 65px;
+    height: 60px;
+    max-width: 813px;
+    background-color: $travel-blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $travel-white;
+    font-family: Gill;
+    border-radius: 25px;
+    margin: 25px auto;
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+  .booking-form {
+    width: 344px;
+    // display: flex;
+    justify-content: center;
+    // flex-direction: column;
+    // padding-bottom: 10px;
+    padding-right: 0px;
+    padding-left: 0px;
+    text-align: center;
+
+    // justify-content: center;
+
+    .line-one {
+      padding-right: 0px;
+      padding-left: 0px;
+      flex-wrap: wrap;
+      // flex-direction: column;
+
+      .line-one-name {
+        margin-bottom: 20px;
+      }
+    }
+
+    .line-two {
+      padding-right: 0px;
+      padding-left: 0px;
+      flex-wrap: wrap;
+      // width: 400px;
+      // flex-direction: column;
+      // justify-content: center;
+
+      .line-two-country {
+        margin-bottom: 20px;
+      }
+    }
+
+    .line-three {
+      padding-right: 0px;
+      padding-left: 0px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .line-four {
+      padding-right: 0px;
+      padding-left: 0px;
+      flex-wrap: wrap;
+
+      justify-content: center;
+    }
+
+    .line-five {
+      padding-right: 0px;
+      padding-left: 0px;
+      flex-wrap: wrap;
+      flex-direction: column;
+
+      // background-color: blue;
+      justify-content: center;
+
+      .adult {
+        margin: 5px 120.5px 20px 120.5px;
+      }
+
+      .children {
+        margin: 5px 120.5px 20px 120.5px;
+      }
+
+      .rooms {
+        margin: 5px 120.5px 20px 120.5px;
+      }
+    }
+
+    .message {
+      padding-right: 0px;
+      padding-left: 0px;
+      width: 344px;
+    }
+
+    .submit-button {
+      margin: 50px 0px 50px 0px;
+    }
+  }
+}
